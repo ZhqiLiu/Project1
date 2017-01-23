@@ -1,0 +1,38 @@
+N=100;
+head=0;
+tail=0;
+total=0;
+run=0;
+run1=0;
+j=1;
+  for i=1:N
+      total=total+1;
+      a=rand();
+      if a>=0.5
+          head=head+1;
+          run1=run1+1;
+      else
+          tail=tail+1;
+          if run1>run
+              run=run1;
+              if run1>0
+              length(j)=run1;
+              j=j+1;
+              run1=0;
+              end
+          else
+              if run1>0
+              length(j)=run1;
+              j=j+1;
+              run1=0;
+              end
+          end
+      end
+      
+  end
+  p=head/N
+  head
+  length
+bar(length,0.5);
+run
+
