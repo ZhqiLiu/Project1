@@ -27,3 +27,5 @@ run1=0;
 B=[head tail];
 figure(1)
 bar(B,0.2);
+figure(2)
+bar(B,0.3)
